@@ -56,17 +56,8 @@ struct ContentView: View {
         
     }
     
-    // Notch : çentik altında kalmasını sağladı , top padding
-    // Cihazın üst kısmındaki güvenli alanın yüksekliğini döner (genellikle durum çubuğu veya çentik için).
-    func getSafeAreaTopInset() -> CGFloat {
-        guard let window = UIApplication.shared.connectedScenes
-            .compactMap({ $0 as? UIWindowScene })
-            .flatMap({ $0.windows })
-            .first(where: { $0.isKeyWindow }) else {
-            return 0
-        }
-        return window.safeAreaInsets.top
-    }
+    
+    
 }
 
 #Preview {
