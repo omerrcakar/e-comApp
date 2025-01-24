@@ -12,6 +12,8 @@ struct e_commerceApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Shop())
+            // access the properties of this shop class anywhere
         }
     }
 }
